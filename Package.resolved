@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "acynccache",
+      "identity" : "asynccache",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zunda-pixel/AcyncCache",
+      "location" : "https://github.com/zunda-pixel/AsyncCache",
       "state" : {
-        "branch" : "main",
-        "revision" : "77ce09a1a0769b4cdc7d7326dfe43dd220330a2b"
+        "revision" : "6dd3fc64b9e406afbf3f8a4ce5d3da7a9821fc9f",
+        "version" : "0.0.1"
       }
     },
     {

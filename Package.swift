@@ -10,6 +10,7 @@ let package = Package(
     .macOS(.v12),
     .watchOS(.v8),
     .tvOS(.v15),
+    .visionOS(.v1),
   ],
   products: [
     .library(
@@ -18,13 +19,13 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(url: "https://github.com/zunda-pixel/AcyncCache", branch: "main"),
+    .package(url: "https://github.com/zunda-pixel/AsyncCache", .upToNextMajor(from: "0.0.1")),
   ],
   targets: [
     .target(
       name: "LazyImage",
       dependencies: [
-        .product(name: "AsyncCache", package: "AcyncCache"),
+        .product(name: "AsyncCache", package: "AsyncCache"),
       ]
     ),
     .testTarget(
